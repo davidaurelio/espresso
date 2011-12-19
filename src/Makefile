@@ -11,7 +11,7 @@ CFLAGS = $(INCLUDE) -mmcu=$(MCU) -DF_CPU=$(CPU_SPEED) -Os -w -Wl,--gc-sections \
 	-ffunction-sections -fdata-sections
 LIBS = -Larduino -Ljs -larduino -ljs -lm
 
-OBJECTS = main.o bytecode.o b_digital.o b_analog.o b_serial.o
+OBJECTS = main.o b_digital.o b_analog.o b_serial.o
 
 default: all
 
